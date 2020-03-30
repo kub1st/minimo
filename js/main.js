@@ -3,7 +3,7 @@ $(function() {
     const btn = $(this);
     const loader = btn.find("span");
     $.ajax({
-      url: "/data.html",
+      url: "https://kub1st.github.io/minimo.githab.io/data.html",
       type: "GET",
       beforeSend: function() {
         btn.attr("disabled", true);
