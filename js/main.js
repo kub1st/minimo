@@ -17,7 +17,7 @@ $(function() {
         }, 1000);
       },
       error: function() {
-        alert("ERROR!");
+        alert("ЖОПА!");
         loader.removeClass("d-inline-block"); 
         btn.attr("disabled", true);
       }
