@@ -1,1 +1,0 @@
-# minimo.githab.io
