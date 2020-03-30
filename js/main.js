@@ -3,7 +3,7 @@ $(function() {
     const btn = $(this);
     const loader = btn.find("span");
     $.ajax({
-      url: "https://kub1st.github.io/minimo.githab.io/data.html",
+      url: "/data.html",
       type: "GET",
       beforeSend: function() {
         btn.attr("disabled", true);
@@ -13,12 +13,12 @@ $(function() {
         setTimeout(function() {
           loader.removeClass("d-inline-block");
           btn.attr("disabled", false);
-          $('.after-posts').before(responce);
+          $(".after-posts").before(responce);
         }, 1000);
       },
       error: function() {
         alert("ERROR!");
-        loader.removeClass("d-inline-block"); 
+        loader.removeClass("d-inline-block");
         btn.attr("disabled", true);
       }
     });
